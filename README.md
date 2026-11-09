@@ -1,16 +1,29 @@
-# Calculadora 3D — REV.02 (Miguelito)
+# Calculadora 3D — REV.03 (Miguelito)
 
-Atualização visual da REV.01 com o mascote Miguelito no cabeçalho e ícones próprios para instalação como aplicativo (PWA).
+Aplicativo web estático para estimativa de custos e precificação de impressão 3D.
 
-## Conteúdo
-- `index.html`: aplicação web.
-- `manifest.webmanifest`: nome, cores e ícones da instalação.
-- `sw.js`: cache offline com versão REV.02.
-- `assets/miguelito.png`: mascote em PNG com transparência.
-- `assets/icon-192.png` e `assets/icon-512.png`: ícones do aplicativo.
+## Publicação na Vercel
+- Framework: Other
+- Diretório raiz: `./`
+- Comando de build: vazio
+- Diretório de saída: `.`
+- Comando de instalação: vazio
 
-## Publicar na Vercel/GitHub
-Envie o conteúdo desta pasta para a raiz do repositório `calculadora-3d`, substituindo os arquivos existentes e adicionando a pasta `assets`. A Vercel publicará automaticamente após o commit, se a integração Git estiver ativa.
+## Estrutura
+- `index.html`: aplicação
+- `assets/`: Miguelito e ícones PWA
+- `manifest.webmanifest`: instalação como aplicativo
+- `sw.js`: cache offline (cache versionado para REV.03)
+
+## Mudanças da REV.03
+- Aba Calcular simplificada: dados da peça, impressora, filamento, peso, tempo e quantidade.
+- Ajustes recorrentes movidos para Configurações: falhas, desperdício, operacional, embalagem, impostos, marketplace, taxa fixa, markup e anúncios/ROAS.
+- Parâmetros são salvos no dispositivo e aplicados automaticamente nos cálculos.
+- Botão para restaurar parâmetros iniciais sem apagar cadastros de filamentos/impressoras.
+- Mantidos histórico, relatórios, gráfico circular e mascote Miguelito.
+
+## Dados
+Configurações e histórico usam `localStorage` do navegador/dispositivo. Não há sincronização entre aparelhos nesta versão.
 
 ## Atenção
-Esta revisão preserva as funções e fórmulas da REV.01. A inclusão do mascote e dos ícones não valida matematicamente as fórmulas de precificação; essa conferência continua sendo uma etapa separada antes de uso comercial.
+As fórmulas são as da versão anterior e ainda precisam de validação numérica comparativa com a calculadora original antes de uso comercial.
