@@ -1,15 +1,14 @@
-# Calculadora 3D — REV.04 (Miguelito)
+# Calculadora 3D — REV.05
 
 Aplicativo web responsivo para estimativa de custos e precificação de impressão 3D.
 
-## Novidade da REV.04
-- Dados opcionais do cliente, prazo, validade, pagamento e observações.
-- Orçamento comercial em layout A4 para impressão ou salvar como PDF pelo navegador.
-- O documento do cliente mostra somente descrição, quantidade e preço; custos internos e lucro não são exibidos.
-- Mantém configurações, cadastros, histórico local e gráfico da REV.03.
+## REV.05
+- Orçamento com apresentação visual em azul-marinho e amarelo.
+- Miguelito atualizado com os livros.
+- Validade da proposta fixada em 5 dias corridos no documento impresso.
+- Impressão A4 com destaque de projeto e valor total.
 
 ## Publicação
-Projeto estático: importe a raiz do repositório na Vercel com preset Other, sem comando de build e diretório de saída `.`.
+Projeto estático: publique a raiz desta pasta na Vercel, sem comando de build e com diretório de saída `.`.
 
-## Observação
-Os cálculos continuam sujeitos à validação numérica com a calculadora original antes de uso comercial. Os dados são armazenados localmente no navegador/dispositivo.
+Os dados continuam armazenados localmente no navegador/dispositivo. As fórmulas permanecem sujeitas à validação numérica com a calculadora original.
