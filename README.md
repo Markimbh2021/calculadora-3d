@@ -1,14 +1,16 @@
-# Calculadora 3D — Rev.01
+# Calculadora 3D — REV.02 (Miguelito)
 
-Protótipo web responsivo, com identidade azul-marinho/amarelo, abas Calcular/Configurações/Histórico/Relatórios, cadastro local de filamentos e impressoras, cálculo em tempo real, gráfico circular e persistência via localStorage.
+Atualização visual da REV.01 com o mascote Miguelito no cabeçalho e ícones próprios para instalação como aplicativo (PWA).
 
-## Testar
-Abra `index.html` em um navegador moderno. Os dados ficam salvos no navegador/dispositivo.
+## Conteúdo
+- `index.html`: aplicação web.
+- `manifest.webmanifest`: nome, cores e ícones da instalação.
+- `sw.js`: cache offline com versão REV.02.
+- `assets/miguelito.png`: mascote em PNG com transparência.
+- `assets/icon-192.png` e `assets/icon-512.png`: ícones do aplicativo.
 
-## Publicar na Vercel
-Crie um repositório GitHub, envie os arquivos desta pasta e importe o repositório na Vercel. Como é um site estático, não precisa de build command; a pasta raiz é a raiz do projeto.
+## Publicar na Vercel/GitHub
+Envie o conteúdo desta pasta para a raiz do repositório `calculadora-3d`, substituindo os arquivos existentes e adicionando a pasta `assets`. A Vercel publicará automaticamente após o commit, se a integração Git estiver ativa.
 
-## Importante — revisão das fórmulas
-A fórmula de material aplica falhas + desperdício ao peso; energia usa potência × horas × tarifa; depreciação usa valor da impressora / vida útil × horas; operacional aplica percentual sobre material + energia + depreciação; embalagem e anúncios são adicionados como valores fixos por orçamento. O preço de venda aplica markup e depois desconta imposto, taxa de marketplace e taxa fixa. Essas regras são hipóteses iniciais de protótipo e precisam ser conferidas com a implementação original/resultado esperado antes de uso comercial.
-
-Os dados são locais ao navegador nesta Rev.01; não há login nem sincronização entre dispositivos.
+## Atenção
+Esta revisão preserva as funções e fórmulas da REV.01. A inclusão do mascote e dos ícones não valida matematicamente as fórmulas de precificação; essa conferência continua sendo uma etapa separada antes de uso comercial.
